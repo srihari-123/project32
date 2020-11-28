@@ -10,7 +10,7 @@ var polygon;
 var slingShot;
 var polygon_img, backgroundImg;
 var score = 0;
-var bg = "OIP2.jfif";
+var backgroundImg = "OIP2.jfif";
 function preload(){
   getBackgroundImage();
   polygon_img=loadImage("OIP.jfif");
@@ -120,7 +120,7 @@ function draw() {
   fill("gold");
   imageMode(CENTER)
   image(polygon_img ,polygon.position.x,polygon.position.y,40,40);
- 
+  text("SCORE : "+score,750,40);
   slingShot.display();
   block1.score();
   block2.score();
